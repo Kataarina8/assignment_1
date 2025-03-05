@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+    <style>
+        
+        a[href*="google.com"] {
+            color: green;
+        }
+
+        a[href*="linkgroup.com"] {
+            color: red;
+        }
+        
+        #second-div p:nth-child(odd){
+            color: red;
+        }
+
+        #second-div p:nth-child(even){
+            color: blue;
+        }
+
+        #second-div p:nth-child(6)::after,
+        #second-div p:nth-child(7)::after {
+            content: "NEW";
+            color: yellow;
+        }
+
+        #second-div p:nth-child(15):hover {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    
+    <div id="second-div">
+        <p>Paragraph 1</p>
+
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.google.com/doodles">Google Doodles</a>
+        <a href="http://www.linkgroup.com">Goto Link Group</a>
+
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+
+        <h3>Sub subheading</h3>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+        <p>Paragraph 8</p>
+        <p>Paragraph 9</p>
+        <p>Paragraph 10</p>
+
+    </div>
+</body>
+</html>
